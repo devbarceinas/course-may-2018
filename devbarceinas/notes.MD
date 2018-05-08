@@ -91,6 +91,17 @@ Asignar una función a una variable para reutilizarla después :
 let func = x => x + 1;
 let num = func(5);
 ```
+```Promises``` : El flujo de información de Internet tiene características asíncronas, lo que significa que mientras esperamos el resultado de una operación como por ejemplo que carguen los datos de una página web, un programa puede realizar otras operaciones y cuando el resultado esté listo utilizarlo. Las promesas son objetos que representan esta clase de operaciones y los datos que se obtienen.
+
+En el siguiente bloque de código el método obtenerDatos hace una petición a algún otro sitio y devuelve un dato de interés para nosotros, el problema es que ese proceso puede demorar algunos milisegundos y nosotros no podemos esperar, entonces en vez de devolvernos el dato como tal, nos devuelve un objeto de tipo Promise que tiene un método then, este método recibe dos funciones una que se ejecuta en caso de que se obtenga el dato correctamente (success) y la otra en caso de que haya ocurrido un error (failure), una de estas funciones se ejecutará en el futuro cercano.
+```javascript
+let promesa = obtenerDatos();
+promesa.then((dato) => {
+    console.log(dato);    // 'mensaje'
+}, (error) => {
+    console.error(error);   // ocurrió un error
+});
+```
 
 License
 ----
