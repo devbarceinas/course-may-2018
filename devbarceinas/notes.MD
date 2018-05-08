@@ -42,9 +42,28 @@ Git es un software de control de versiones diseñado por Linus Torvalds, pensand
 | git branch -v | Muestra todas las ramas creadas |
 | git marge <nameBranch> |  Mezcla, fusiona una rama con otra |
 
-###EcmaScript 6
+### EcmaScript 6
 ___
 > ECMAScript v6 (Abreviado como ES6 o ES2015) es el estándar que sigue JavaScript, permitiendo llevar mejores practicas en nuestro desarrollo.
+
+##### Nuevas Funciones de ES6
+____
+```let``` : indica que una variable solo va a estar definida en un bloque en particular, al terminar el bloque la variable deja de existir, esto es muy útil para evitar errores lógicos cuando alteramos una variable que no deberíamos.
+```javascript
+let letTest = () => {
+  if (true) {
+    let x = 23;
+    console.log(x);  // 71
+  }
+  console.log(x);  // no existe x
+}
+```
+```const``` : por su parte previene que una variable declarada cambie de valor, convirtiéndola efectivamente en una constante. Siempre es recomendable usar constantes para valores que sabemos que no van a cambiar, así se evitan modificaciones inesperadas.
+```javascript
+const a = 7;
+a = 5; // error
+console.log(a);
+```
 
 
 License
