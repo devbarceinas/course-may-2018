@@ -21,8 +21,8 @@ Git es un software de control de versiones diseñado por Linus Torvalds, pensand
 | Comandos | Significado |
 | ------ | ------ |
 | git init | Crea un repositorio vacio |
-| git config --global user.name <"youName"> | Establece una configuración básica de tu nombre |
-| git config --global user.name <"youEmail"> | Establece una configuración básica de tu email |
+| git config --global user.name <youName> | Establece una configuración básica de tu nombre |
+| git config --global user.name <youEmail> | Establece una configuración básica de tu email |
 | git add -A | Agrega archivos al index area |
 | git add <youFile.txt> | Agrega al index area un archivo en especifico |
 | git clone https://tu-repo.git | Clona un repositorio en tu local |
@@ -44,7 +44,7 @@ Git es un software de control de versiones diseñado por Linus Torvalds, pensand
 
 ###EcmaScript 6
 ___
-> ECMAScript v6 (Abreviado como ES6 o ES2015) es el estándar que seguirá JavaScript a partir de Junio de este año (2015)
+> ECMAScript v6 (Abreviado como ES6 o ES2015) es el estándar que sigue JavaScript, permitiendo llevar mejores practicas en nuestro desarrollo.
 
 
 License
