@@ -64,7 +64,33 @@ const a = 7;
 a = 5; // error
 console.log(a);
 ```
+```Template Strings``` : Son un tipo especial de cadena con formato, similares a la interpolación en otros lenguajes como Ruby, se definen con un par de caracteres back-tick (`) a diferencia de las cadenas normales que usan comillas sencillas o dobles.
+```javascript
+var s1= `esta es una template string`;
 
+// Pueden contener valores
+var n = 5;
+var s2 = `El valor de n es ${n}`;
+
+// Pueden abarcar múltiples líneas
+var s3 = `Esta es una cadena
+ escrita en dos líneas`
+```
+```Arrows Functions``` : Conocidas en otros lenguajes (C#, Java) como expresiones lambda, arrows o flechas son abreviaciones de funciones utilizando el operador =>
+```javascript
+let cuadrado = numeros.map((n) => {
+    return n * n;
+});
+```
+Con la nueva sintaxis podemos obtener el mismo resultado pero de una forma más elegante:
+```javascript
+let cuadrado = numeros.map(n => n * n);
+```
+Asignar una función a una variable para reutilizarla después :
+```javascript
+let func = x => x + 1;
+let num = func(5);
+```
 
 License
 ----
