@@ -1,9 +1,9 @@
 {
-    "datos": [
-        {"nombre": "Goku"},
-        {"nombre": "Frezer"},
-        {"nombre": "Cell"},
-        {"nombre": "Vegeta"},
-        {"nombre": "Picoro"}
+    "data": [
+        {"name": "Goku"},
+        {"name": "Frezer"},
+        {"name": "Cell"},
+        {"name": "Vegeta"},
+        {"name": "Picoro"}
     ]
 }
